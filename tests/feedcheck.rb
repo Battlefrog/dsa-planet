@@ -56,7 +56,7 @@ hash.each do |key, section|
   puts '✓ '
 end
 
-avatars << 'default.png'
+avatars << 'default.webp'
 avatars.uniq!
 hackergotchis = Dir.foreach(av_dir).select { |f| File.file?("#{av_dir}/#{f}") }
 diff = (hackergotchis - avatars).sort
